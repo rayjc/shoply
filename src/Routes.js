@@ -1,12 +1,13 @@
 import React from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import ProductList from './ProductList';
+import ProductDetail from './ProductDetail';
 
 
 const Routes = () => (
   <Switch>
     <Route exact path="/products/:id">
-      <p>product detail</p>
+      <ProductDetail />
     </Route>
     <Route exact path="/cart">
       <p>Cart</p>

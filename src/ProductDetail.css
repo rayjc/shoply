@@ -1,37 +1,48 @@
-.ProductCard {
+.ProductDetail {
     text-align: center;
     border: 2px solid black;
     border-radius: 1rem;
-    margin: 2rem 1rem;
+    margin: 6rem auto 2rem;
     background-color: white;
     box-shadow: 2px 2px 10px black;
     padding: 20px;
-    flex-basis: auto;
+    width: 75%;
 }
 
-.ProductCard-container {
+.ProductDetail-container {
     margin: 20px auto;
     /* width: 80%; */
     /* height: 300px; */
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
 }
 
-.ProductCard img {
+.ProductDetail img {
     max-width: 100%;
     max-height: 100%;
 }
 
-.ProductCard h3 {
+.ProductDetail h3 {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
-.ProductCard button {
+.ProductDetail button {
     padding: 5px;
+    display: block;
+    margin: 1rem auto;
 }
 
-.ProductCard a {
+.ProductDetail a {
     text-decoration: none;
     color: black;
+}
+
+.ProductDetail form {
+    margin: 2rem;
+}
+
+.ProductDetail input {
+    width: 3rem;
+    margin: auto 1rem;
 }
