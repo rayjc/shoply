@@ -23,11 +23,12 @@ function cartReducer(state = [], action) {
       return state.reduce((cart, item) => {
         if (item.id !== action.payload.id) {
           // simply add other items to cart array
-          cart.push(item);
+          cart.push({ ...item });
         } else if (item.quantity - action.payload.quantity > 0) {
+          const newItem = { ...item };
           // add removed item to cary array if remaining quantity > 0
-          item.quantity -= action.payload.quantity;
-          cart.push(item);
+          newItem.quantity -= action.payload.quantity;
+          cart.push(newItem);
         }
         return cart;
       }, []);
