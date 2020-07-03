@@ -1,0 +1,32 @@
+.ProductCard {
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 1rem;
+    margin: 2rem 1rem;
+    background-color: white;
+    box-shadow: 2px 2px 10px black;
+    padding: 20px;
+    flex-basis: auto;
+}
+
+.ProductCard-container {
+    margin: 20px auto;
+    /* width: 80%; */
+    /* height: 300px; */
+    width: 300px;
+    height: 300px;
+}
+
+.ProductCard img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.ProductCard h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.ProductCard button {
+    padding: 5px;
+}
