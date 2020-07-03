@@ -1,0 +1,7 @@
+.Cart {
+    margin: 5rem auto;
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}

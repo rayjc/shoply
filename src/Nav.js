@@ -5,11 +5,12 @@ import './Nav.css';
 
 const Nav = () => {
   const cart = useSelector(state => state.cart);
+  const numItems = cart.reduce((acc, item) => acc + item.quantity, 0);
 
   return (
     <nav className="Nav">
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/cart">Cart({cart.length})</NavLink>
+      <NavLink exact to="/">Home</NavLink>
+      <NavLink exact to="/cart">Cart({numItems})</NavLink>
     </nav>
   );
 }

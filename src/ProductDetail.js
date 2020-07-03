@@ -28,7 +28,7 @@ const ProductDetail = () => {
       <h4>$ {price}</h4>
       <form onSubmit={handleSubmit}>
         <label htmlFor="quantity-input">Quantity:</label>
-        <input id="quantity-input" type="number" min="1"
+        <input id="quantity-input" type="number" min="1" max="100"
           value={quantity} onChange={(e) => setQuantity(e.target.value)} />
         <button type="submit">Add to Cart</button>
       </form>
